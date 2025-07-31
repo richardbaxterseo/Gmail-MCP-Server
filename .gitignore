@@ -1,0 +1,92 @@
+# Gmail MCP .gitignore
+
+# Credentials and secrets
+credentials.json
+client_secret*.json
+token*.json
+.env
+.env.local
+.env.*.local
+*-credentials.json
+*-token.json
+
+# OAuth tokens
+.gmail-mcp/
+tokens/
+.tokens/
+
+# API Keys
+*.key
+*.pem
+service-account*.json
+
+# Personal data
+tax-receipts*/
+attachments/
+downloads/
+exports/
+*.csv
+*.xlsx
+
+# Node modules
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build outputs
+dist/
+build/
+out/
+.next/
+*.tsbuildinfo
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Test coverage
+coverage/
+*.lcov
+.nyc_output/
+
+# Logs
+logs/
+*.log
+
+# Operating System
+Thumbs.db
+.Spotlight-V100
+.Trashes
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Configuration overrides
+config.local.json
+config.development.json
+config.production.json
+
+# Example outputs (may contain PII)
+examples/output/
+examples/downloads/
+examples/*.json
+examples/*.csv
+
+# Development databases
+*.sqlite
+*.db
+
+# Backup files
+*.bak
+*.backup
+
+# Lock files (optional - some prefer to commit these)
+package-lock.json
+yarn.lock
